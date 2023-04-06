@@ -9,6 +9,14 @@
     <q-input required v-model="username" label="Username" dense />
     <q-input required v-model="fullName" label="Full Name" dense />
     <q-input required v-model="avatar" label="Avatar Link" dense />
+    <div class="q-mt-sm text-red-9 text-bold">
+      To get avatar link visit
+      <a href="https://www.dicebear.com/playground" target="_blank">DiceBear</a
+      >. Expected avatar link -
+      <a href="https://api.dicebear.com/6.x/adventurer/svg?seed=Snowball"
+        >https://api.dicebear.com/6.x/adventurer/svg?seed=Snowball</a
+      >
+    </div>
     <div class="q-mt-md row justify-between items-center">
       <q-btn color="secondary" flat dense @click="toggleBtn">
         Login to existing account
