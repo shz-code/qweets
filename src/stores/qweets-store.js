@@ -6,6 +6,8 @@ import {
   deleteDoc,
   doc,
   getDocs,
+  orderBy,
+  query,
 } from "firebase/firestore";
 import db from "src/boot/firebase";
 
@@ -25,7 +27,9 @@ const qweetsStore = defineStore({
       this.qweets = [];
       this.loading = true;
       try {
-        const initialQweets = await getDocs(collection(db, "qweets"));
+        const qweetsRef = collection(db, "qweets");
+        const q = query(qweetsRef, orderBy("dateCreated", "desc"));
+        const initialQweets = await getDocs(q);
         initialQweets.forEach((doc) => {
           let qweet = doc.data();
           qweet.docId = doc.id;

@@ -32,7 +32,7 @@ import { storeToRefs } from "pinia";
 
 const qweetsInstance = qweetsStore();
 
-const { qweets, loading } = storeToRefs(qweetsInstance);
+const { getQweets, loading } = storeToRefs(qweetsInstance);
 
 export default defineComponent({
   name: "QweetList",
@@ -46,7 +46,7 @@ export default defineComponent({
     QweetItem,
   },
   mounted() {
-    this.qweets = qweets;
+    this.qweets = getQweets;
   },
 });
 </script>
