@@ -1,6 +1,6 @@
 # Qweets (qweets)
 
-Qweets is a mini text sharing platform made with [Quasar](https://quasar.dev/) a [Vue Js](https://vuejs.org/) framework with [Pinia](ttps://pinia.vuejs.org/) as the state management tool. Firebase is used as the data backend.
+Qweets is a mini text sharing platform made with [Quasar](https://quasar.dev/) a [Vue Js](https://vuejs.org/) framework with [Pinia](https://pinia.vuejs.org/) as the state management tool. Firebase is used as the data backend.
 Users can register themselves and start sending messages (Dummy authentication with username) and also register as a new user.
 
 ![](https://img.shields.io/badge/Framework-Vue-informational?style=flat&logo=vuedotjs&logoColor=white&color=2bbc8a)
