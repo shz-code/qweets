@@ -10,8 +10,8 @@
     </h4>
     <div class="text-body1">
       <p>
-        <span>Qweets</span> is a mini text sharing platform made with
-        <a href="https://quasar.dev/" target="_blank">Quasar</a> a
+        <span class="brand">Qweets</span> is a mini text sharing platform made
+        with <a href="https://quasar.dev/" target="_blank">Quasar</a> a
         <a href="https://vuejs.org/" target="_blank">Vue Js</a> framework with
         <a href="https://pinia.vuejs.org/" target="_blank">Pinia</a> as the
         state management tool. <br />
@@ -20,7 +20,7 @@
       </p>
 
       <p>
-        This mini project <span>Qweet</span> is inspired from
+        This mini project <span class="brand">Qweets</span> is inspired from
         <a href="https://youtu.be/la-0ulfn0_M" target="_blank">freecodecamp</a>
         and developed by
         <a href="https://github.com/shz-code" target="_blank">@shz-code</a>
@@ -63,7 +63,7 @@ export default defineComponent({
 });
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .icon-link {
   text-decoration: none;
   color: inherit;
@@ -71,5 +71,9 @@ export default defineComponent({
 .flex-col {
   display: flex;
   flex-direction: column;
+}
+.brand {
+  color: $primary;
+  font-weight: bold;
 }
 </style>
